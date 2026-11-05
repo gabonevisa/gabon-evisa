@@ -1,0 +1,35 @@
+GABON eVISA — DISQUS COMMENTS SETUP
+===================================
+Updated: 28 HTML pages; existing content/navigation/imagery preserved.
+
+WHAT WAS ADDED
+- A responsive “Questions or Comments?” section ABOVE the footer on every page.
+- The script file disqus-comments.js in the SAME folder as the HTML pages.
+- Each page gets its OWN stable Disqus discussion (including homepage).
+
+REQUIRED ONE-TIME ACTIVATION
+1. In Disqus, create/select your own Gabon website at https://disqus.com/admin/.
+2. Find the EXACT shortname under Settings > General. A Disqus shortname is
+   not the website title and is different from the Turkey account.
+3. Edit disqus-comments.js and change this line:
+       var DISQUS_SHORTNAME = 'YOUR_GABON_DISQUS_SHORTNAME';
+   Example only (do not use unless this is actually your registered shortname):
+       var DISQUS_SHORTNAME = 'my-gabon-site';
+4. In Disqus Settings > General, set Website URL to your FINAL published
+   Gabon site address. Save changes. If Trusted Domains are enabled, allow
+   your publishing domain in Disqus Advanced settings.
+5. Upload ALL 28 HTML files AND disqus-comments.js to the same folder
+   of the deployed website. Allow your host to finish publishing.
+6. Load the published HTTPS page and refresh it. Check that the form renders,
+   submit a test comment, and confirm each HTML page has a separate thread.
+
+TROUBLESHOOTING
+- Comments will not load until the correct Gabon Disqus shortname is set.
+- File preview via file:// is not the same as a published HTTPS site.
+- Ad blockers/privacy extensions can block Disqus scripts.
+- Inspect browser DevTools > Console and Network if a script is blocked.
+- Disqus moderation settings may prevent a submitted comment from appearing
+  immediately.
+
+Note: No Disqus shortname was supplied for Gabon. We deliberately did NOT
+connect these pages to the unrelated Turkey Disqus account.
