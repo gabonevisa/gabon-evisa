@@ -6,7 +6,7 @@
 (function () {
   'use strict';
 
-  var DISQUS_SHORTNAME = 'YOUR_GABON_DISQUS_SHORTNAME';
+  var DISQUS_SHORTNAME = 'gabon-evisa-online';
   var thread = document.getElementById('disqus_thread');
   var status = document.getElementById('gabon-disqus-status');
   if (!thread) return;
@@ -18,7 +18,7 @@
     }
   }
 
-  if (!DISQUS_SHORTNAME || DISQUS_SHORTNAME === 'YOUR_GABON_DISQUS_SHORTNAME') {
+  if (!DISQUS_SHORTNAME || DISQUS_SHORTNAME === 'gabon-evisa-online') {
     message('Comments are being set up for this website.');
     console.info('Gabon Disqus: set DISQUS_SHORTNAME in disqus-comments.js to enable comments.');
     return;
